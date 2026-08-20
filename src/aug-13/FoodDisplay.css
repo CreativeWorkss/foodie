@@ -1,0 +1,156 @@
+/* Main Food Display Section */
+.food-display {
+  width: 100%;
+  padding: 30px 35px 40px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+/* Heading */
+.food-display h2 {
+  margin: 15px 0 28px;
+
+  font-size: 24px;
+  font-weight: 700;
+
+  color: #171717;
+}
+
+/* Food Items Container */
+.food-list {
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 32px 24px;
+
+  width: 100%;
+}
+
+/* Remove Link Default Styling */
+.food-link {
+  text-decoration: none;
+  color: inherit;
+
+  display: block;
+}
+
+/* Individual Food Card */
+.food-card {
+  width: 100%;
+  min-height: 175px;
+
+  padding: 18px 12px 15px;
+
+  background-color: #ffffff;
+
+  border-radius: 18px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Card Hover */
+.food-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+}
+
+/* Food Image */
+.food-card img {
+  width: 115px;
+  height: 115px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  display: block;
+
+  transition: transform 0.3s ease;
+}
+
+/* Image Zoom on Hover */
+.food-card:hover img {
+  transform: scale(1.06);
+}
+
+/* Food Name */
+.food-card h3 {
+  margin: 12px 0 0;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  color: #111111;
+
+  text-align: center;
+}
+
+/* Link Hover */
+.food-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+  .food-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Small Tablet */
+@media (max-width: 850px) {
+  .food-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .food-display {
+    padding: 25px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .food-list {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px 15px;
+  }
+
+  .food-display {
+    padding: 20px 15px;
+  }
+
+  .food-display h2 {
+    font-size: 20px;
+  }
+
+  .food-card {
+    min-height: 155px;
+  }
+
+  .food-card img {
+    width: 95px;
+    height: 95px;
+  }
+}
+
+/* Very Small Mobile */
+@media (max-width: 380px) {
+  .food-list {
+    grid-template-columns: 1fr;
+  }
+}

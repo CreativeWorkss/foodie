@@ -1,0 +1,410 @@
+.movie-ad {
+  width: 380px;
+
+  min-height: 720px;
+
+  background: linear-gradient(180deg, #080b22 0%, #11152f 55%, #090b20 100%);
+
+  color: white;
+
+  border-radius: 22px;
+
+  padding: 30px;
+
+  box-sizing: border-box;
+
+  text-align: center;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+
+  overflow: hidden;
+}
+
+/* -------------------------------- */
+/* TOP SECTION */
+/* -------------------------------- */
+
+.movie-ad-top {
+  position: relative;
+}
+
+.movie-icons {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  font-size: 28px;
+
+  margin-bottom: 5px;
+}
+
+.movie-ad h1 {
+  margin: 0;
+
+  font-size: 48px;
+
+  font-weight: 900;
+
+  letter-spacing: 2px;
+
+  line-height: 1.05;
+}
+
+.movie-ad h2 {
+  margin: 1px 0;
+
+  color: #ffc928;
+
+  font-size: 27px;
+
+  font-style: italic;
+
+  font-weight: 700;
+}
+
+.perfect-night {
+  margin: 20px 0 16px;
+
+  padding: 11px 8px;
+
+  background-color: #ef3428;
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  transform: rotate(-2deg);
+}
+
+.movie-description {
+  margin: 0;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  color: #e8e8e8;
+}
+
+/* -------------------------------- */
+/* FOOD AREA */
+/* -------------------------------- */
+
+.movie-food {
+  height: 145px;
+
+  margin: 25px 0;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: center;
+
+  gap: 3px;
+
+  border-radius: 15px;
+
+  background: linear-gradient(transparent, rgba(255, 0, 0, 0.13));
+}
+
+.food-emoji {
+  font-size: 64px;
+
+  line-height: 1;
+}
+
+.food-emoji.big {
+  font-size: 92px;
+}
+
+/* -------------------------------- */
+/* MAIN BUTTON */
+/* -------------------------------- */
+
+.book-ticket-btn {
+  width: 100%;
+
+  padding: 16px;
+
+  border: none;
+
+  border-radius: 30px;
+
+  background-color: #ffc928;
+
+  color: #111;
+
+  font-size: 16px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.book-ticket-btn:hover {
+  background-color: #ffd84d;
+
+  transform: translateY(-2px) scale(1.02);
+
+  box-shadow: 0 6px 15px rgba(255, 201, 40, 0.25);
+}
+
+/* -------------------------------- */
+/* BENEFITS */
+/* -------------------------------- */
+
+.movie-benefits {
+  margin: 28px 0;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+}
+
+.movie-benefits div {
+  width: 31%;
+}
+
+.movie-benefits span {
+  font-size: 27px;
+}
+
+.movie-benefits p {
+  margin: 7px 0 0;
+
+  color: #ddd;
+
+  font-size: 10px;
+}
+
+/* -------------------------------- */
+/* NOW PLAYING */
+/* -------------------------------- */
+
+.now-playing {
+  margin: 20px 0;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.now-playing span {
+  flex: 1;
+
+  height: 1px;
+
+  background-color: #ffc928;
+}
+
+.now-playing h3 {
+  margin: 0;
+
+  color: #ffc928;
+
+  font-size: 16px;
+
+  white-space: nowrap;
+}
+
+/* -------------------------------- */
+/* MOVIE CARDS */
+/* -------------------------------- */
+
+.movie-list {
+  width: 100%;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 10px;
+}
+
+.movie-item {
+  width: 32%;
+
+  text-align: center;
+}
+
+.movie-poster {
+  width: 100%;
+
+  height: 150px;
+
+  border-radius: 10px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 48px;
+
+  transition: transform 0.25s ease;
+}
+
+.movie-item:hover .movie-poster {
+  transform: translateY(-4px);
+}
+
+.poster-one {
+  background: linear-gradient(180deg, #284d79, #102039);
+}
+
+.poster-two {
+  background: linear-gradient(180deg, #92391f, #36110a);
+}
+
+.poster-three {
+  background: linear-gradient(180deg, #a6b5c4, #243647);
+}
+
+.movie-item h4 {
+  margin: 9px 0 4px;
+
+  min-height: 30px;
+
+  font-size: 11px;
+
+  line-height: 1.3;
+
+  color: white;
+}
+
+.movie-item p {
+  margin: 0 0 9px;
+
+  min-height: 25px;
+
+  color: #aaa;
+
+  font-size: 9px;
+
+  line-height: 1.3;
+}
+
+.movie-item button {
+  padding: 6px 10px;
+
+  border: 1px solid #ffc928;
+
+  border-radius: 15px;
+
+  background-color: transparent;
+
+  color: #ffc928;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.movie-item button:hover {
+  background-color: #ffc928;
+
+  color: #111;
+}
+
+/* -------------------------------- */
+/* FOOTER */
+/* -------------------------------- */
+
+.movie-ad-footer {
+  margin: 28px -30px -30px;
+
+  padding: 20px 22px;
+
+  border-radius: 0 0 22px 22px;
+
+  background-color: rgba(255, 255, 255, 0.05);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  cursor: pointer;
+
+  transition: background-color 0.25s ease;
+}
+
+.movie-ad-footer:hover {
+  background-color: rgba(255, 255, 255, 0.09);
+}
+
+.movie-ad-footer span {
+  font-size: 23px;
+}
+
+.movie-ad-footer p {
+  margin: 0 0 3px;
+
+  color: #aaa;
+
+  font-size: 10px;
+}
+
+.movie-ad-footer strong {
+  font-size: 14px;
+
+  color: white;
+}
+
+/* -------------------------------- */
+/* RESPONSIVE */
+/* -------------------------------- */
+
+@media (max-width: 600px) {
+  .movie-ad {
+    width: 100%;
+
+    min-height: auto;
+
+    padding: 25px;
+  }
+
+  .movie-ad h1 {
+    font-size: 40px;
+  }
+
+  .movie-food {
+    height: 120px;
+  }
+
+  .food-emoji {
+    font-size: 52px;
+  }
+
+  .food-emoji.big {
+    font-size: 75px;
+  }
+
+  .movie-poster {
+    height: 125px;
+  }
+}

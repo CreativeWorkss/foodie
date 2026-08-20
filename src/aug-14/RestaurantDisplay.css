@@ -1,0 +1,142 @@
+.restaurant-section {
+  width: 100%;
+  margin-top: 55px;
+}
+
+.restaurant-section h2 {
+  margin: 0 0 22px;
+  font-size: 21px;
+  color: #222;
+}
+
+/* Restaurant cards container */
+
+.restaurant-list {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+/* Individual card */
+
+.restaurant-card {
+  width: 100%;
+
+  min-width: 0;
+
+  background-color: #ffffff;
+
+  border: 1px solid #eeeeee;
+
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+}
+
+/* Restaurant image */
+
+.restaurant-card img {
+  width: 100%;
+
+  height: 135px;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+/* Text section */
+
+.restaurant-details {
+  padding: 13px;
+}
+
+.restaurant-details h3 {
+  margin: 0 0 7px;
+
+  font-size: 14px;
+
+  color: #222;
+}
+
+.restaurant-cuisine {
+  margin: 0 0 12px;
+
+  font-size: 11px;
+
+  color: #777;
+}
+
+/* Rating + delivery time */
+
+.restaurant-info {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 8px;
+
+  font-size: 10px;
+}
+
+.restaurant-rating {
+  padding: 4px 7px;
+
+  background-color: #24963f;
+
+  color: white;
+
+  border-radius: 5px;
+
+  font-weight: 600;
+}
+
+.restaurant-time {
+  color: #555;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .restaurant-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+  .restaurant-list {
+    grid-template-columns: 1fr;
+  }
+
+  .restaurant-card img {
+    height: 180px;
+  }
+}
